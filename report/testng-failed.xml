@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [WEBUIAUTO]" parallel="tests">
+  <test name="ff52(failed)" parallel="tests">
+    <parameter name="remoteIP" value="47.96.116.144"/>
+    <parameter name="browsertype" value="firefox"/>
+    <parameter name="browserversion" value="61.0.2"/>
+    <classes>
+      <class name="com.tn.automation.testngcase.RunCase">
+        <methods>
+          <include name="case_001检查北京首页css_js引用连接"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="aftercase"/>
+          <include name="setUp"/>
+          <include name="aftercase"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="case_002检查北京首页图片正常连接"/>
+        </methods>
+      </class> <!-- com.tn.automation.testngcase.RunCase -->
+    </classes>
+  </test> <!-- ff52(failed) -->
+  <test name="chrome48(failed)" parallel="tests">
+    <parameter name="remoteIP" value="47.96.116.144"/>
+    <parameter name="browsertype" value="chrome"/>
+    <parameter name="browserversion" value="68.0.3440.106"/>
+    <classes>
+      <class name="com.tn.automation.testngcase.RunCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="aftercase"/>
+          <include name="setUp"/>
+          <include name="aftercase"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="case_002检查北京首页图片正常连接"/>
+        </methods>
+      </class> <!-- com.tn.automation.testngcase.RunCase -->
+    </classes>
+  </test> <!-- chrome48(failed) -->
+</suite> <!-- Failed suite [WEBUIAUTO] -->
