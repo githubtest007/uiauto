@@ -77,7 +77,7 @@ public class RunCase {
     
     @Test//(enabled = false)
     public void case_002检查北京首页图片正常连接() throws Exception {
-    	driver.open("http://bj.tuniu.com");
+    	driver.open("https://www.baidu.com/index.php?tn=mswin_oem_dg");
     	driver.scrollToBottom();
     	CaseResult result =cf.checkPicConnect();
     	Assert.assertTrue(result.getKey(),result.getMsg());
